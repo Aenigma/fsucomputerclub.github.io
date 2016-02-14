@@ -1,0 +1,7 @@
+.jumbotron {
+
+  padding: 15% 0;
+
+  background-image: url(../images/banner.png);
+  background-size: cover;
+}
