@@ -17,3 +17,7 @@ github_username: FSUComputerClub
 
 # Build settings
 markdown: kramdown
+
+# Club Information
+meeting_time: Wednesdays at 4:00
+meeting_place: CCIT 237

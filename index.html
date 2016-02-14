@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="home">
+<div class='home'>
 	<div class='jumbotron'>
 		<div class='container'>
 			<!-- %p -->
@@ -11,31 +11,21 @@ layout: default
 	</div>
 	<div class='container'>
 		<div class='row'>
+			{% for post in site.posts limit:2 %}
 			<div class='col-md-4'>
-				<h2>Unity Symposium project</h2>
-				<p>We are making a tower defense game using Unity and presenting at the symposium.</p>
-				<p>If you want to model or learn game logic, join!</p>
-				<p>
-				<a class='btn btn-default' href='events.html#unity' role='button'>View details &raquo;</a>
-				</p>
+				<h2><a href='{{ post.url }}'>{{ post.title }}</a></h2>
+				{{ post.excerpt }}
+				<a class='btn btn-default' href='{{ post.url }}' role='button'>View details &raquo;</a>
 			</div>
-			<div class='col-md-4'>
-				<h2>Buy a CSIT Department t-shirt</h2>
-				<img src='/images/zazzlecodeb.png' width='30%'>
-				<br>
-				<br>
-				<p>
-				<a class='btn btn-default' href='events.html#shirt' role='button'>View details &raquo;</a>
-				</p>
-			</div>
+			{% endfor %}
 			<div class='col-md-4'>
 				<h2>Time</h2>
-			<p>
-			<strong>4:00 on Wednesdays</strong>
-			</p>
-			<p>
-				<strong>CCIT room 237</strong>
-			</p>
+				<p>
+				<strong>{{ site.meeting_time }}</strong>
+				</p>
+				<p>
+				<strong>{{ site.meeting_place }}</strong>
+				</p>
 		</div>
 	</div>
 </div>
