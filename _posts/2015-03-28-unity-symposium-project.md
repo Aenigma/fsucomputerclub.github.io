@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Unity Symposium project"
+author: Seth Thomas
 date:   2015-03-28 00:56:00 -0500
 categories: projects
 ---
