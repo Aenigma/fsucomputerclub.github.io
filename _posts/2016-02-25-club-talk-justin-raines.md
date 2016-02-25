@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Club Talk: Justin Raines
+title: "Club Talk: Justin Raines"
 author: Kevin Raoofi
 date:   2016-02-25 16:15:00 -0500
 categories: events
