@@ -7,18 +7,18 @@
 				<span class='icon-bar'></span>
 				<span class='icon-bar'></span>
 			</button>
-			<a class='navbar-brand' href='{{ site.baseurl }}'>FSU Computer Club</a>
+			<a class='navbar-brand' href='{{ '/' | prepend: site.baseurl }}'>FSU Computer Club</a>
 		</div>
 		<div class='navbar-collapse collapse' id='navbar'>
 			<ul class='nav navbar-nav'>
 				<li>
-					<a href='{{ site.baseurl }}'>Home</a>
+					<a href='{{ '/' | prepend: site.baseurl }}'>Home</a>
 				</li>
 				<li>
-					<a href={{ 'events/' | prepend: site.baseurl }}>Events</a>
+					<a href={{ '/events/' | prepend: site.baseurl }}>Events</a>
 				</li>
 				<li>
-					<a href={{ 'irc.html' | prepend: site.baseurl }}>IRC Channel</a>
+					<a href={{ '/irc.html' | prepend: site.baseurl }}>IRC Channel</a>
 				</li>
 			</ul>
 		</div>
